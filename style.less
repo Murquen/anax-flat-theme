@@ -3,12 +3,21 @@
 */
 @import url(modules.less);
 
+html {
+    background-color: rgb(220, 220, 220);
+}
+
 /** --------------------------------------------------------------
  *  Header
  */
 
 .site-header {
     height: 80px;
+    border: 1px solid black;
+    margin: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 10px;
 }
 
 .site-logo-text,
@@ -35,18 +44,29 @@
 }
 
 /** --------------------------------------------------------------
+ *  Body
+ */
+
+.outer-wrap-main {
+    background-color: rgb(175, 175, 175);
+    padding: 3px;
+    border: 1px solid rgb(150, 150, 150);
+}
+
+/** --------------------------------------------------------------
  *  Navbar main
  */
 
-.rm-desktop li {
-    //background-color: rgb(200, 200, 200);
-}
+// .rm-desktop li {
+//     //background-color: rgb(200, 200, 200);
+// }
 
 @navbarItemBgColor: rgb(200, 200, 200);
+@navbarItemHoverBgColor: rgb(170, 170, 170);
 
-.rm-button .rm-button-face-1 {
-    //font-size: 2em;
-}
+// .rm-button .rm-button-face-1 {
+//     //font-size: 2em;
+// }
 
 @maxButtonFontSize: 2em;
 
@@ -64,6 +84,18 @@
         vertical-align: bottom;
     }
 }
+
+/** --------------------------------------------------------------
+ *  Article design
+ */
+
+.article {
+    img {
+        width: 97%;
+        padding: 1.5%;
+    }
+}
+
 
 /** --------------------------------------------------------------
  *  Responsive design
@@ -93,6 +125,10 @@
     .footer-column {
         width: 100%;
     }
+    
+    .site-logo-text {
+        width: 80%;
+    }
 
     .navbar2 {
         display: none;
@@ -100,9 +136,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .site-logo-text {
-        width: 80%;
-    }
+
 
     .navbar2 {
         display: none;

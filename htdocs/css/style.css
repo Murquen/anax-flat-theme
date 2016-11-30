@@ -586,7 +586,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li a:hover {
   color: inherit;
-  background-color: inherit;
+  background-color: #aaaaaa;
 }
 .rm-desktop li:hover > ul {
   left: 0;
@@ -708,11 +708,19 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-max.rm-swipe-right .rm-mobile {
   right: 0;
 }
+html {
+  background-color: #dcdcdc;
+}
 /** --------------------------------------------------------------
  *  Header
  */
 .site-header {
   height: 80px;
+  border: 1px solid black;
+  margin: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 10px;
 }
 .site-logo-text,
 .navbar2,
@@ -734,6 +742,14 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   width: 100%;
 }
 /** --------------------------------------------------------------
+ *  Body
+ */
+.outer-wrap-main {
+  background-color: #afafaf;
+  padding: 3px;
+  border: 1px solid #969696;
+}
+/** --------------------------------------------------------------
  *  Navbar main
  */
 /** --------------------------------------------------------------
@@ -746,6 +762,13 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .site-logo-text-icon img {
   vertical-align: bottom;
+}
+/** --------------------------------------------------------------
+ *  Article design
+ */
+.article img {
+  width: 97%;
+  padding: 1.5%;
 }
 /** --------------------------------------------------------------
  *  Responsive design
@@ -770,14 +793,14 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   .footer-column {
     width: 100%;
   }
+  .site-logo-text {
+    width: 80%;
+  }
   .navbar2 {
     display: none;
   }
 }
 @media screen and (max-width: 500px) {
-  .site-logo-text {
-    width: 80%;
-  }
   .navbar2 {
     display: none;
   }
